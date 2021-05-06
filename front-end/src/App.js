@@ -19,7 +19,7 @@ function App() {
 	const [isLoading, setIsLoading] = useState(false); // add a new variable in the state to check if the data is loading
 	const getData = () => {
 		setIsLoading(true); // change the state: data is loading
-		fetch("http://localhost:5000/")
+		fetch("https://salty-chamber-10638.herokuapp.com/")
 			.then((res) => res.json())
 			.then((data) => {
 				setData(data);
